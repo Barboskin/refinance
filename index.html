@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1118">
+  <meta name="color-scheme" content="dark">
+  <title>re:finance — учёт расходов, личный бюджет и инвестиционный портфель</title>
+  <meta name="description" content="Ведите учёт доходов и расходов, импортируйте банковские выписки, отслеживайте доходность портфеля, вклады, дивиденды и купоны в re:finance для iOS и Android.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://barboskin.github.io/refinance/">
+  <link rel="sitemap" type="application/xml" href="./sitemap.xml">
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="re:finance">
+  <meta property="og:title" content="re:finance — личные финансы и инвестиции">
+  <meta property="og:description" content="Личный бюджет, инвестиционный портфель, банковские вклады и календарь выплат в одном приложении.">
+  <meta property="og:url" content="https://barboskin.github.io/refinance/">
+  <meta property="og:image" content="https://barboskin.github.io/refinance/assets/share.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="re:finance. Финансы в ваших руках. Экран сводки приложения.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./landing.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "re:finance",
+      "url": "https://barboskin.github.io/refinance/",
+      "description": "Приложение для учёта доходов и расходов, анализа инвестиционного портфеля, вкладов и календаря выплат.",
+      "inLanguage": "ru",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS, Android",
+      "image": "https://barboskin.github.io/refinance/assets/share.jpg",
+      "installUrl": [
+        "https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=822742107931319856&referrer=reattribution%3D1",
+        "https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=246281357255290638&referrer=reattribution%3D1",
+        "https://www.rustore.ru/catalog/app/ru.barboskin.investor"
+      ]
+    }
+  </script>
+</head>
+<body id="top">
+  <svg class="store-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0">
+    <symbol id="icon-app-store" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M18.7 12.6c0-2 1.65-3 1.73-3.06-.95-1.39-2.43-1.58-2.95-1.6-1.26-.13-2.45.74-3.09.74-.63 0-1.61-.73-2.65-.7-1.37.02-2.63.79-3.34 2.02-1.42 2.45-.37 6.08 1.02 8.07.68.98 1.48 2.07 2.54 2.03 1.02-.04 1.41-.65 2.65-.65s1.6.65 2.69.63c1.1-.02 1.8-1 2.47-1.99.78-1.14 1.1-2.24 1.12-2.3-.03-.01-2.16-.83-2.18-3.19ZM16.67 6.62c.56-.68.94-1.62.84-2.56-.81.03-1.8.54-2.39 1.22-.53.61-.99 1.57-.87 2.49.91.07 1.85-.46 2.42-1.15Z" transform="translate(-2.5 -1) scale(1.08)"/>
+    </symbol>
+    <symbol id="icon-google-play" viewBox="0 0 24 24">
+      <path fill="#4cc8ff" d="M3 3.2v17.6c0 .6.3 1 .7 1.2L14 12 3.7 2c-.4.2-.7.6-.7 1.2Z"/>
+      <path fill="#6cdd89" d="m3.7 2 12.5 7-2.2 3L3.7 2Z"/>
+      <path fill="#ffd05c" d="m14 12 2.2-3 4.4 2.5a.6.6 0 0 1 0 1L16.2 15 14 12Z"/>
+      <path fill="#ff7285" d="M3.7 22 14 12l2.2 3-12.5 7Z"/>
+    </symbol>
+    <symbol id="icon-rustore" viewBox="0 0 24 24">
+      <rect x="1" y="1" width="22" height="22" rx="6" fill="#087cff"/>
+      <path d="m7 8.5 7 1.75v7.5L7 16V8.5Z" fill="#cfe6ff"/>
+      <path d="m10 6.75 7 1.75V16l-7-1.75v-7.5Z" fill="#fff"/>
+      <path d="M12 6.9a1.5 1.5 0 0 1 3 .7" fill="none" stroke="#fff" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="phone-status-icons" viewBox="0 0 44 12">
+      <path fill="currentColor" d="M1 8h2v3H1zm3-2h2v5H4zm3-2h2v7H7zm3-2h2v9h-2z"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M16 4a9 9 0 0 1 12 0m-10 2.5a6 6 0 0 1 8 0m-6 2.4a3 3 0 0 1 4 0"/>
+      <circle cx="22" cy="11" r=".8" fill="currentColor"/>
+      <rect x="32" y="3" width="10" height="7" rx="2" fill="none" stroke="currentColor"/>
+      <rect x="33.5" y="4.5" width="7" height="4" rx=".8" fill="currentColor"/>
+      <path d="M43 5v3" stroke="currentColor" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="./assets/icon.png" width="44" height="44" alt="">
+        <span>re<span class="brand-colon">:</span>finance</span>
+      </a>
+      <nav aria-label="Основная навигация">
+        <a href="#features">Возможности</a>
+        <a href="#tools">Инструменты</a>
+        <a href="#infographics">Инфографика</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <a class="header-install" href="#download">Скачать <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Личные финансы и инвестиции</p>
+          <h1 id="hero-title">Ваши деньги.<br><strong>Вся картина.</strong></h1>
+          <p class="hero-description">Больше не нужен Excel. Личный бюджет, доходность инвестиционного портфеля и календарь с ожидаемыми выплатами дивидендов, купонов и процентов по вкладам в приложении re:finance.</p>
+          <div class="stores" id="download" role="group" aria-label="Скачать re:finance">
+            <a class="store" data-store-link href="https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=822742107931319856&referrer=reattribution%3D1">
+              <svg width="26" height="26" aria-hidden="true"><use href="#icon-app-store"></use></svg>
+              <span><small>Скачать в</small>App Store</span>
+            </a>
+            <a class="store" data-store-link href="https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=246281357255290638&referrer=reattribution%3D1">
+              <svg width="26" height="26" aria-hidden="true"><use href="#icon-google-play"></use></svg>
+              <span><small>Скачать в</small>Google Play</span>
+            </a>
+            <a class="store" data-store-link href="https://www.rustore.ru/catalog/app/ru.barboskin.investor">
+              <svg width="26" height="26" aria-hidden="true"><use href="#icon-rustore"></use></svg>
+              <span><small>Скачать из</small>RuStore</span>
+            </a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <div class="hero-grid" aria-hidden="true"></div>
+          <div class="orbit" aria-hidden="true"></div>
+          <div class="orbit orbit-close" aria-hidden="true"></div>
+          <div class="device device-back">
+            <div class="device-screen">
+              <div class="device-status" aria-hidden="true">
+                <span>9:41</span>
+                <svg width="44" height="12"><use href="#phone-status-icons"></use></svg>
+              </div>
+              <img src="./assets/portfolio.webp" width="540" height="1169" alt="" decoding="async">
+            </div>
+          </div>
+          <div class="device device-front">
+            <div class="device-screen">
+              <div class="device-status" aria-hidden="true">
+                <span>9:41</span>
+                <svg width="44" height="12"><use href="#phone-status-icons"></use></svg>
+              </div>
+              <img src="./assets/summary.webp" width="540" height="1169" alt="Сводка re:finance: доходы, расходы, ожидаемые выплаты и движения портфеля" fetchpriority="high" decoding="async">
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap section" id="features" aria-labelledby="features-title">
+      <div class="section-intro" data-reveal>
+        <h2 id="features-title">Бюджет, портфель и выплаты</h2>
+      </div>
+      <div>
+        <div class="feature-tabs" data-feature-tabs aria-label="Экраны re:finance" hidden>
+          <button type="button" id="tab-portfolio" aria-controls="portfolio">Портфель</button>
+          <button type="button" id="tab-budget" aria-controls="budget">Финансы</button>
+          <button type="button" id="tab-calendar" aria-controls="calendar">Календарь</button>
+        </div>
+        <article class="feature" id="portfolio">
+          <div class="feature-copy">
+            <h3>Управляйте инвестиционным портфелем</h3>
+            <p>Соберите акции, облигации, биржевые фонды и вклады. Подключите Т-Банк или БКС по API, загрузите брокерский отчёт (Сбер, Альфа, ВТБ, БКС) или добавьте операции вручную.</p>
+            <ul>
+              <li>Стоимость и структура активов по счетам, эмитентам и тегам</li>
+              <li>Абсолютная, относительная и годовая доходность XIRR</li>
+              <li>История сделок, котировки и выплаты по бумагам</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="device">
+              <div class="device-screen">
+                <div class="device-status" aria-hidden="true">
+                  <span>9:41</span>
+                  <svg width="44" height="12"><use href="#phone-status-icons"></use></svg>
+                </div>
+                <img src="./assets/portfolio.webp" width="540" height="1169" alt="Портфель re:finance со списком активов и общей стоимостью" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="feature feature-mint" id="budget">
+          <div class="feature-copy">
+            <h3>Ведите учёт расходов и доходов</h3>
+            <p>Добавляйте покупки, зарплату и другие операции. Настраивайте свои категории и смотрите по графикам, как меняется личный бюджет.</p>
+            <ul>
+              <li>Добавляйте операции в пару кликов</li>
+              <li>Импорт банковских выписок форматах: PDF, CSV, TSV и TXT</li>
+              <li>Аналитика доходов и расходов за день, неделю, месяц или год</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="device">
+              <div class="device-screen">
+                <div class="device-status" aria-hidden="true">
+                  <span>9:41</span>
+                  <svg width="44" height="12"><use href="#phone-status-icons"></use></svg>
+                </div>
+                <img src="./assets/budget.webp" width="540" height="1169" alt="Экран «Мои финансы» с графиком доходов и расходов по месяцам" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="feature feature-violet" id="calendar">
+          <div class="feature-copy">
+            <h3>Планируйте поступления по календарю</h3>
+            <p>Следите за будущими дивидендами, купонами и процентами по банковским вкладам. Смотрите ожидаемые суммы по месяцам и типам выплат.</p>
+            <ul>
+              <li>Ожидаемые выплаты по портфелю на ближайшие 12 месяцев</li>
+              <li>Расчет ожидаемой доходности портфеля</li>
+              <li>Даты оферт и погашения облигаций</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="device">
+              <div class="device-screen">
+                <div class="device-status" aria-hidden="true">
+                  <span>9:41</span>
+                  <svg width="44" height="12"><use href="#phone-status-icons"></use></svg>
+                </div>
+                <img src="./assets/calendar.webp" width="540" height="1169" alt="Календарь инвестора с прогнозом дивидендов, купонов и процентов по вкладам" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="tools" aria-labelledby="tools-title">
+      <div class="section-intro" data-reveal>
+        <h2 id="tools-title">Инструменты инвестора</h2>
+      </div>
+      <div class="tool-grid">
+        <article class="tool" data-reveal>
+          <span class="tool-icon" aria-hidden="true">%</span>
+          <h3>Калькулятор облигаций</h3>
+          <p>Оцените текущую доходность, доходность к погашению/оферте с учётом параметров выпуска и цены покупки.</p>
+        </article>
+        <article class="tool tool-mint" data-reveal>
+          <span class="tool-icon" aria-hidden="true">↗</span>
+          <h3>Калькулятор сложного процента</h3>
+          <p>Рассчитайте итоговую сумму с регулярными пополнениями и капитализацией процентов.</p>
+        </article>
+        <article class="tool tool-violet" data-reveal>
+          <span class="tool-icon" aria-hidden="true">◈</span>
+          <h3>Скринер биржевых фондов</h3>
+          <p>Отбирайте фонды по классу активов, комиссии, способу управления и годовой доходности.</p>
+        </article>
+        <article class="tool tool-gold" data-reveal>
+          <span class="tool-icon" aria-hidden="true">₽</span>
+          <h3>Налоги</h3>
+          <p>Посчитаем налоги и подскажем как их уменьшить сальдировав убытки. По каждому инструменту покажем время до наступления ЛДВ.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="infographics" aria-labelledby="infographics-title">
+      <div class="section-intro" data-reveal>
+        <h2 id="infographics-title">Инфографика по вашему портфелю</h2>
+        <p class="section-description">Сохраните снимок портфеля, чтобы сравнить доли активов со временем. Покажите, какие позиции выросли или сократились за месяц, или поделитесь итогами по дивидендам, купонам и процентам по вкладам.</p>
+      </div>
+      <div class="infographic-carousel" data-carousel role="group" aria-roledescription="карусель" aria-label="Примеры инфографики">
+        <div class="infographic-track" data-carousel-track tabindex="0" aria-label="Листайте примеры">
+          <figure class="infographic">
+            <a href="./assets/infographic-composition.webp" aria-label="Открыть пример инфографики состава портфеля">
+              <img src="./assets/infographic-composition.webp" width="1440" height="1040" alt="Пример состава портфеля с диаграммой долей акций и облигаций" loading="lazy" decoding="async">
+            </a>
+          </figure>
+          <figure class="infographic">
+            <a href="./assets/infographic-changes.webp" aria-label="Открыть пример инфографики изменений в портфеле">
+              <img src="./assets/infographic-changes.webp" width="1440" height="974" alt="Пример изменений портфеля за месяц с увеличившимися и уменьшившимися позициями" loading="lazy" decoding="async">
+            </a>
+          </figure>
+          <figure class="infographic">
+            <a href="./assets/infographic-payments.webp" aria-label="Открыть пример инфографики полученных выплат">
+              <img src="./assets/infographic-payments.webp" width="1440" height="1040" alt="Пример графика полученных купонов, дивидендов и процентов по вкладам" loading="lazy" decoding="async">
+            </a>
+          </figure>
+        </div>
+        <div class="infographic-pagination" data-carousel-pagination role="group" aria-label="Выбор примера" hidden>
+          <button type="button" aria-label="Состав портфеля" aria-current="true"></button>
+          <button type="button" aria-label="Изменения в портфеле"></button>
+          <button type="button" aria-label="Полученные выплаты"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section faq" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Частые вопросы</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Сколько стоит?</summary>
+          <p>Программа абсолютно бесплатно. Без рекламы, подписок и скрытых платежей. В этом философия re:finance</p>
+        </details>
+        <details>
+          <summary>Почему это безопасно?</summary>
+          <p>Все финансовые данные хранятся только на вашем устройстве. Re:finance никуда их не отправляет. Распознавание брокерских отчетов и банковских выписок также работает на вашем устройстве. Выход в сеть используется только для загрузки котировок, подключённых вами брокерских интеграций и технической аналитики.</p>
+        </details>
+        <details>
+          <summary>Нужно ли добавлять данные вручную?</summary>
+          <p>Нет, это не обязательно. Можно подключить Т-Банк или БКС по API, импортировать брокерские отчёты или загружать банковские выписки. Перед сохранением операций из выписки можно проверить распознанные данные и поправить категории.</p>
+        </details>
+        <details>
+          <summary>Могу ли я создавать свои категории трат?</summary>
+          <p>Да. Вы можете создавать сколько угодно категорий и подкатегорий расходов. Также можно отмечать операции тегами и смотреть по ним аналитику. Например, тег «Отпуск» объединит траты на билеты, жильё и еду из разных категорий.</p>
+        </details>
+        <details>
+          <summary>Можно вести портфель без подключения брокера?</summary>
+          <p>Да. Создайте ручной счёт и добавляйте сделки, выплаты и комиссии сами. Также можно импортировать поддерживаемые брокерские отчёты Т-Банка, БКС, Альфы и Сбера.</p>
+        </details>
+        <details>
+          <summary>Как перенести данные на другой телефон?</summary>
+          <p>В разделе «Ещё» → «Данные» создайте резервную копию и импортируйте её на новом устройстве. В копию входят финансовые операции, вклады, ручные счета и история из поддерживаемых брокерских отчётов. При экспорте можно задать пароль.</p>
+        </details>
+        <details>
+          <summary>Когда пригодится показатель XIRR?</summary>
+          <p>Годовая доходность XIRR помогает оценить результат инвестиций с учётом дат пополнений и выводов. Точность расчёта зависит от полноты истории операций.</p>
+        </details>
+        <details>
+          <summary>Как поделиться инфографикой из re:finance?</summary>
+          <p>Откройте «Состав портфеля», «Изменения в портфеле», «Выплаты» или «Календарь» и нажмите иконку «Поделиться» справа вверху. В системном меню выберите, куда сохранить или отправить PNG. <a href="#infographics">Посмотреть примеры</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="wrap section closing" aria-labelledby="closing-title">
+      <div>
+        <h2 id="closing-title">Начните с первой операции</h2>
+        <p>Запишите расход, загрузите выписку или добавьте брокерский счёт.</p>
+      </div>
+      <div class="stores" role="group" aria-label="Скачать re:finance">
+        <a class="store" data-store-link href="https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=822742107931319856&referrer=reattribution%3D1">
+          <svg width="26" height="26" aria-hidden="true"><use href="#icon-app-store"></use></svg>
+          <span><small>Скачать в</small>App Store</span>
+        </a>
+        <a class="store" data-store-link href="https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=246281357255290638&referrer=reattribution%3D1">
+          <svg width="26" height="26" aria-hidden="true"><use href="#icon-google-play"></use></svg>
+          <span><small>Скачать в</small>Google Play</span>
+        </a>
+        <a class="store" data-store-link href="https://www.rustore.ru/catalog/app/ru.barboskin.investor">
+          <svg width="26" height="26" aria-hidden="true"><use href="#icon-rustore"></use></svg>
+          <span><small>Скачать из</small>RuStore</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand footer-brand" href="#top">
+        <img src="./assets/icon.png" width="36" height="36" alt="">
+        <span>re<span class="brand-colon">:</span>finance</span>
+      </a>
+      <div class="footer-contacts" role="group" aria-label="Связаться с разработчиком">
+        <a class="footer-contact" href="mailto:supergbarboskin@gmail.com" aria-label="Написать на почту" title="Написать на почту">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5.5" width="18" height="13" rx="3"/>
+            <path d="m4.4 7.3 6.5 5a1.8 1.8 0 0 0 2.2 0l6.5-5"/>
+          </svg>
+        </a>
+        <a class="footer-contact" href="https://t.me/i_am_rational_investor" aria-label="Открыть Telegram" title="Открыть Telegram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M21.2 4.1 3.1 11c-.9.35-.9 1.05-.16 1.28l4.61 1.44 10.7-6.75c.51-.31.98-.14.6.2l-8.67 7.83-.34 4.02c.49 0 .71-.22.98-.48l2.31-2.25 4.83 3.57c.89.49 1.53.23 1.75-.84l3.16-14c.33-1.31-.5-1.8-1.67-1.32Z" transform="translate(-.75 .3)"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="wrap footer-notes">
+      <section aria-labelledby="risk-title">
+        <h2 id="risk-title">Инвестиционные решения</h2>
+        <p>Информация и расчёты в re:finance носят справочный характер и не являются индивидуальной инвестиционной рекомендацией (ИИР). Инвестиции связаны с риском потери средств. Прошлая доходность не гарантирует будущих результатов.</p>
+      </section>
+      <section aria-labelledby="accuracy-title">
+        <h2 id="accuracy-title">Актуальность данных</h2>
+        <p>Котировки и другие данные могут обновляться с задержкой, быть неполными или содержать ошибки. Расчёты зависят от полноты истории операций. Суммы и даты ожидаемых выплат могут меняться. Проверяйте важные сведения у брокера, биржи или эмитента.</p>
+      </section>
+      <section aria-labelledby="rights-title">
+        <h2 id="rights-title">Права на материалы</h2>
+        <p>Все материалы представлены в ознакомительных целях. Права на материалы, изображения, логотипы и товарные знаки принадлежат соответствующим правообладателям.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
