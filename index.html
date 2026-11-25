@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0e1118">
   <meta name="color-scheme" content="dark">
-  <title>re:finance — учёт расходов, личный бюджет и инвестиционный портфель</title>
-  <meta name="description" content="Ведите учёт доходов и расходов, импортируйте банковские выписки, отслеживайте доходность портфеля, вклады, дивиденды и купоны в re:finance для iOS и Android.">
+  <title>Учёт расходов и инвестиций — бесплатное приложение re:finance</title>
+  <meta name="description" content="re:finance для iOS и Android: учёт доходов и расходов, импорт выписок, инвестиционный портфель и календарь дивидендов. Бесплатно, без рекламы и подписок.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://barboskin.github.io/refinance/">
   <link rel="sitemap" type="application/xml" href="./sitemap.xml">
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="re:finance">
-  <meta property="og:title" content="re:finance — личные финансы и инвестиции">
+  <meta property="og:title" content="Учёт расходов и инвестиций — бесплатное приложение re:finance">
   <meta property="og:description" content="Личный бюджет, инвестиционный портфель, банковские вклады и календарь выплат в одном приложении.">
   <meta property="og:url" content="https://barboskin.github.io/refinance/">
   <meta property="og:image" content="https://barboskin.github.io/refinance/assets/share.jpg">
@@ -37,11 +37,19 @@
       "operatingSystem": "iOS, Android",
       "image": "https://barboskin.github.io/refinance/assets/share.jpg",
       "installUrl": [
-        "https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=822742107931319856&referrer=reattribution%3D1",
-        "https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=246281357255290638&referrer=reattribution%3D1",
-        "https://www.rustore.ru/catalog/app/ru.barboskin.investor"
-      ]
-    }
+            "https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=822742107931319856&referrer=reattribution%3D1",
+            "https://6371626.redirect.appmetrica.yandex.com?appmetrica_tracking_id=246281357255290638&referrer=reattribution%3D1",
+            "https://www.rustore.ru/catalog/app/ru.barboskin.investor"
+      ],
+      "@id": "https://barboskin.github.io/refinance/#app",
+      "alternateName": "refinance",
+      "isAccessibleForFree": true,
+      "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "RUB"
+      }
+}
   </script>
 </head>
 <body id="top">
@@ -82,6 +90,7 @@
         <a href="#tools">Инструменты</a>
         <a href="#infographics">Инфографика</a>
         <a href="#faq">Вопросы</a>
+        <a href="#guides">Инструкции</a>
       </nav>
       <a class="header-install" href="#download">Скачать <span aria-hidden="true">↗</span></a>
     </div>
@@ -90,7 +99,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Личные финансы и инвестиции</p>
+          <p class="eyebrow">Приложение для учёта финансов и инвестиций</p>
           <h1 id="hero-title">Ваши деньги.<br><strong>Вся картина.</strong></h1>
           <p class="hero-description">Больше не нужен Excel. Личный бюджет, доходность инвестиционного портфеля и календарь с ожидаемыми выплатами дивидендов, купонов и процентов по вкладам в приложении re:finance.</p>
           <div class="stores" id="download" role="group" aria-label="Скачать re:finance">
@@ -153,6 +162,7 @@
               <li>Абсолютная, относительная и годовая доходность XIRR</li>
               <li>История сделок, котировки и выплаты по бумагам</li>
             </ul>
+            <p><a href="./investment-portfolio.html">Как начать учёт портфеля</a></p>
           </div>
           <div class="feature-visual">
             <div class="device">
@@ -175,6 +185,7 @@
               <li>Импорт банковских выписок форматах: PDF, CSV, TSV и TXT</li>
               <li>Аналитика доходов и расходов за день, неделю, месяц или год</li>
             </ul>
+            <p><a href="./bank-statement-import.html">Как импортировать банковскую выписку</a></p>
           </div>
           <div class="feature-visual">
             <div class="device">
@@ -197,6 +208,7 @@
               <li>Расчет ожидаемой доходности портфеля</li>
               <li>Даты оферт и погашения облигаций</li>
             </ul>
+            <p><a href="./dividend-calendar.html">Как пользоваться календарём выплат</a></p>
           </div>
           <div class="feature-visual">
             <div class="device">
@@ -270,6 +282,11 @@
           <button type="button" aria-label="Полученные выплаты"></button>
         </div>
       </div>
+    </section>
+
+    <section class="wrap section" id="guides" aria-labelledby="guides-title">
+      <div class="section-intro"><h2 id="guides-title">Как пользоваться re:finance</h2><p class="section-description">Пошаговые инструкции для учёта портфеля, переноса расходов и планирования выплат.</p></div>
+      <div class="tool-grid"><article class="tool"><h3><a href="./investment-portfolio.html">Как вести инвестиционный портфель</a></h3><p>Акции, облигации, фонды и банковские вклады — в одном приложении. re:finance помогает собрать счета, посмотреть структуру активов и оценить результат с учётом истории операций.</p></article><article class="tool"><h3><a href="./bank-statement-import.html">Как перенести расходы из банковской выписки</a></h3><p>Начните личный бюджет с уже совершённых покупок. Загрузите выписку в re:finance, проверьте операции и назначьте категории перед сохранением.</p></article><article class="tool"><h3><a href="./dividend-calendar.html">Календарь дивидендов, купонов и процентов</a></h3><p>Смотрите ожидаемые поступления по своему портфелю на ближайшие 12 месяцев. re:finance объединяет дивиденды, купоны и проценты по банковским вкладам в календаре.</p></article></div>
     </section>
 
     <section class="wrap section faq" id="faq" aria-labelledby="faq-title">
