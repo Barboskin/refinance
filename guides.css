@@ -1,0 +1,33 @@
+/* Task guides reuse the published landing's colors, assets and typography. */
+.guide { padding-block: 24px 64px; }
+.breadcrumbs { color: var(--muted); font-size: 1rem; margin-block: 8px 40px; }
+.guide-heading { max-width: 900px; margin-bottom: 48px; }
+.guide-heading h1 { font-size: clamp(2.4rem, 5vw, 4.6rem); margin-top: 20px; overflow-wrap: anywhere; }
+.guide-lead { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--muted); margin-top: 24px; max-width: 760px; }
+.guide-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 300px); gap: 64px; align-items: start; }
+.guide-body { min-width: 0; font-size: 1.0625rem; }
+.guide-body section { margin-bottom: 48px; }
+.guide-body h2, .guide-download h2, .guide-related h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 20px; }
+.guide-body p + p { margin-top: 18px; }
+.guide-body ul, .guide-body ol { padding-left: 24px; }
+.guide-body li + li { margin-top: 12px; }
+.guide-body a, .guide-related a, .breadcrumbs a { color: var(--blue); text-underline-offset: 4px; }
+.guide-body table { width: 100%; border-collapse: collapse; font-size: 1rem; margin-block: 24px; table-layout: fixed; }
+.guide-body caption { text-align: left; font-weight: 700; padding-bottom: 12px; }
+.guide-body th, .guide-body td { text-align: left; padding: 12px 8px; vertical-align: top; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.guide-body details { padding-block: 18px; border-bottom: 1px solid var(--line); }
+.guide-body summary { cursor: pointer; font-weight: 650; }
+.guide-body details p { margin-top: 16px; }
+.guide-screen img { border: 1px solid var(--line); border-radius: 24px; }
+.guide-screen figcaption { font-size: 1rem; color: var(--muted); margin-top: 16px; }
+.guide-download, .guide-related { padding-block: 36px; border-top: 1px solid var(--line); }
+.guide-download > p { color: var(--muted); }
+.guide-related nav { display: flex; flex-wrap: wrap; gap: 16px 32px; margin-bottom: 20px; }
+@media (max-width: 800px) {
+ .guide-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+ .guide-screen { max-width: 280px; margin: 0 auto 40px; }
+ .guide-heading { margin-bottom: 32px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+ .guide a:active { opacity: .8; }
+}
